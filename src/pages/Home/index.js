@@ -6,6 +6,7 @@ import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
 
 import api from '../../services/api';
+import { saveLink } from '../../services/storeLinks';
 
 export default function Home() {
   const [link, setLink] = useState('');
@@ -20,6 +21,11 @@ export default function Home() {
 
       setData(response.data); /* objeto que contém o link encurtado */
       setShowModal(true);
+
+      saveLink('@encurtaLink', response.data); // Chama a função de salvar o link passando uma chave (qualquer nome) e o item que será salvo (o link encurtado, no caso)
+
+      // Dá para visualizar no 'Inspecionar' > 'Application' > 'Local Storage'
+
       setLink('');
 
     } catch {
