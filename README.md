@@ -40,6 +40,4 @@ Colocar em prática técnicas, conceitos e tecnologias utilizadas no desenvolvim
 
 ##### Passo 4. Inicie a aplicação: `npm start`
 
-##### Passo 4. Inicie a aplicação: `npm start`
-
 ##### Passo 5. Acesse em: http://localhost:3000
